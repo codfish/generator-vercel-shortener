@@ -1,0 +1,16 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "private": true,
+  "bin": {
+    "shorten": "node_modules/.bin/vercel-redirects"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "echo \"vercel dev requires a build script & public directory. don't delete\"",
+    "shorten": "vercel-redirects"
+  },
+  "vercel-redirects": {
+    "autoPush": true
+  }
+}
