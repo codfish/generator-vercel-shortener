@@ -29,7 +29,7 @@ These aren't prerequisites but before you're able to actually deploy your url sh
 1. Buy, migrate or simply point a domain you already own to Vercel's dns.
 
 You don't technically need to have a domain. By default your new project in Vercel will be deployed
-with a domain like `https://my-url-shortener.now.sh`, and you're redirects will work just fine.
+with a domain like `https://my-url-shortener.now.sh`, and your redirects will work just fine.
 However part of the glory of url shorteners is that they create **short urls** that are easy to type
 and remember!
 
