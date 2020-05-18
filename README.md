@@ -10,10 +10,11 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Inspiration](#inspiration)
-- [LICENSE](#license)
+- [After you generate](#after-you-generate)
+- [Related Projects](#related-projects)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -22,10 +23,15 @@
 These aren't prerequisites but before you're able to actually deploy your url shortener you should:
 
 1. Create a [Vercel account](https://vercel.com/signup).
-1. Set up Vercel [GitHub Integration](https://vercel.com/docs/v2/git-integrations/vercel-for-github). This way Vercel deploys automatically for you.
-2. Buy, migrate or simply point a domain you already own to Vercel's dns.
+1. Set up Vercel
+   [GitHub Integration](https://vercel.com/docs/v2/git-integrations/vercel-for-github). This way
+   Vercel deploys automatically for you.
+1. Buy, migrate or simply point a domain you already own to Vercel's dns.
 
-You don't technically need to have a domain. By default your new project in Vercel will be deployed with a domain like `https://my-url-shortener.now.sh`, and you're redirects will work just fine. However part of the glory of url shorteners is that they create **short urls** that are easy to type and remember!
+You don't technically need to have a domain. By default your new project in Vercel will be deployed
+with a domain like `https://my-url-shortener.now.sh`, and you're redirects will work just fine.
+However part of the glory of url shorteners is that they create **short urls** that are easy to type
+and remember!
 
 ## Installation
 
@@ -39,7 +45,8 @@ npm install -g yo generator-vercel-shortener
 yo vercel-shortener
 ```
 
-By default it will look to generate in your current working directory. If that's not what you want, then specify the directory in the call or create a new directory to run the generator in.
+By default it will look to generate in your current working directory. If that's not what you want,
+then specify the directory in the call or create a new directory to run the generator in.
 
 ```sh
 yo vercel-shortener [<project-directory>]
@@ -63,10 +70,12 @@ Next steps after generating:
 1. Run `git branch -u origin/master`.
 1. Run `vercel` to setup & deploy your project to Vercel.
 1. Add redirects:
-    - Run `shorten <destination> [<source>]`. The generator will expose a globally available script for you. Run this from anywhere in your terminal. See [vercel-redirects](https://github.com/codfish/vercel-redirects) for the full cli documentation.
-    - Run `npm run shorten <destination> [<source>]` from the root of the project.
-    - Add them in `vercel.json` [manually](https://vercel.com/docs/configuration#project/redirects). You'll need to commit and push them yourself.
-    - Create a bash function to help you. See [Advanced](#advanced).
+   - Run `shorten <destination> [<source>]`. The generator will expose a globally available script
+     for you. Run this from anywhere in your terminal. See
+     [vercel-redirects](https://github.com/codfish/vercel-redirects) for the full cli documentation.
+   - Run `npm run shorten <destination> [<source>]` from the root of the project.
+   - Add them in `vercel.json` [manually](https://vercel.com/docs/configuration#project/redirects).
+     You'll need to commit and push them yourself.
 
 For example:
 
@@ -74,17 +83,17 @@ For example:
 shorten https://gist.github.com/codfish/91ef26f3a56a5c5ca0912aa8c0c5c020 /linting
 ```
 
-And in about ~5 seconds I can hit [codfi.sh/linting](https://codfi.sh/linting) and it will redirect for me.
+And in about ~5 seconds I can hit [codfi.sh/linting](https://codfi.sh/linting) and it will redirect
+for me.
 
 ## Related Projects
 
-- [`codfi.sh`](https://github.com/codfish/codfi.sh) - My own personal url shortener, using the same configuration as a project built with this generator.
-- [`vercel-redirects`](https://github.com/codfish/vercel-redirects) - Command-line utility to manage your Vercel project redirects.
-- [`netlify-shortener`](https://github.com/kentcdodds/netlify-shortener) - Your own free URL shortener with Netlify (different serverless platform).
-
-## LICENSE
-
-MIT
+- [`codfi.sh`](https://github.com/codfish/codfi.sh) - My own personal url shortener, using the same
+  configuration as a project built with this generator.
+- [`vercel-redirects`](https://github.com/codfish/vercel-redirects) - Command-line utility to manage
+  your Vercel project redirects.
+- [`netlify-shortener`](https://github.com/kentcdodds/netlify-shortener) - Your own free URL
+  shortener with Netlify (different serverless platform).
 
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org
