@@ -31,8 +31,7 @@
     "format": "cod-scripts format",
     "lint": "cod-scripts lint",
     "lint:commit": "cod-scripts commitlint",
-    "test": "cod-scripts test",
-    "validate": "cod-scripts validate"
+    "test": "cod-scripts test"
   },
   "eslintConfig": {
     "extends": [
