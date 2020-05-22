@@ -12,7 +12,14 @@
     "dist"
   ],
   "main": "dist/index.js",
-  "keywords": [],
+  "keywords": [
+    "yeoman-generator",
+    "vercel",
+    "vercel redirects",
+    "zeit now",
+    "url shortener",
+    "short urls"
+  ],
   "license": "MIT",
   "devDependencies": {
     "cod-scripts": "^4.0.3",
