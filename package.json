@@ -9,7 +9,7 @@
     "url": "https://codfish.io"
   },
   "files": [
-    "dist"
+    "generators"
   ],
   "main": "dist/index.js",
   "keywords": [
