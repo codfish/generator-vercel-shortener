@@ -66,8 +66,8 @@ Next steps after generating:
 
 1. Create a repository for your url shortener, [https://github.com/new](https://github.com/new).
 1. Run `git remote add origin <repo_url>`.
-1. Run `git push origin master`.
-1. Run `git branch -u origin/master`.
+1. Run `git push origin main`.
+1. Run `git branch -u origin/main`.
 1. Run `vercel` to setup & deploy your project to Vercel.
 1. Add redirects:
    - Run `shorten <destination> [<source>]`. The generator will expose a globally available script
@@ -110,7 +110,7 @@ for me.
 [package]: https://www.npmjs.com/package/generator-vercel-shortener
 [downloads-badge]: https://img.shields.io/npm/dm/generator-vercel-shortener.svg?style=flat-square
 [license-badge]: https://img.shields.io/npm/l/generator-vercel-shortener.svg?style=flat-square
-[license]: https://github.com/codfish/generator-vercel-shortener/blob/master/LICENSE
+[license]: https://github.com/codfish/generator-vercel-shortener/blob/main/LICENSE
 [actions]: https://github.com/codfish/generator-vercel-shortener/actions
 [actions-badge]:
-  https://img.shields.io/github/workflow/status/codfish/generator-vercel-shortener/Release/master?style=flat-square
+  https://img.shields.io/github/workflow/status/codfish/generator-vercel-shortener/Release/main?style=flat-square

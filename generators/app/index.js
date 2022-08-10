@@ -50,7 +50,7 @@ module.exports = class extends Generator {
 
   end() {
     // Delete yeoman auto-generated configs.
-    // @see https://github.com/codfish/generator-codfish/blob/master/generators/BaseGenerator.js#L117
+    // @see https://github.com/codfish/generator-codfish/blob/main/generators/BaseGenerator.js#L117
     this.spawnCommandSync('rm', [
       '-rf',
       `${this.contextRoot}/.yo-repository`,
@@ -78,8 +78,8 @@ module.exports = class extends Generator {
     this.log(`
     1. Create a repository for your url shortener. https://github.com/new
     2. Run ${chalk.cyan('git remote add origin <repo_url>')}.
-    3. Run ${chalk.cyan('git push origin master')}.
-    4. Run ${chalk.cyan('git branch -u origin/master')}.
+    3. Run ${chalk.cyan('git push origin main')}.
+    4. Run ${chalk.cyan('git branch -u origin/main')}.
     5. Run ${chalk.cyan('vercel')} to setup & deploy your project to Vercel.
     6. Add redirects: ${chalk.cyan('shorten --help')}.
 `);
